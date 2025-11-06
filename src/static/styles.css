@@ -142,3 +142,64 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-section h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  color: #333;
+  background: linear-gradient(90deg, rgba(26,35,126,0.02), transparent);
+  border-radius: 4px;
+  padding: 6px 34px 6px 28px; /* add right padding for remove button */
+  font-size: 14px;
+}
+
+/* hide the decorative bullet/dot */
+.participants-list li::before {
+  display: none;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.remove-btn:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.no-participants {
+  color: #666;
+  font-style: italic;
+  margin: 6px 0 0 0;
+  font-size: 14px;
+}
