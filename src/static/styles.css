@@ -168,21 +168,33 @@ footer {
   color: #333;
   background: linear-gradient(90deg, rgba(26,35,126,0.02), transparent);
   border-radius: 4px;
-  padding: 6px 8px 6px 28px;
+  padding: 6px 34px 6px 28px; /* add right padding for remove button */
   font-size: 14px;
 }
 
+/* hide the decorative bullet/dot */
 .participants-list li::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #1a237e;
-  border-radius: 50%;
+  display: none;
+}
+
+.remove-btn {
   position: absolute;
-  left: 10px;
+  right: 8px;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.remove-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .no-participants {
